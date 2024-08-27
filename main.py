@@ -1,15 +1,8 @@
+from bot import Bot
+import pyrogram.utils
 
-from pyrogram import Client
+# MIN_CHANNEL_ID ko customize karein, yadi zarurat ho
+pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
-class Bot:
-    def __init__(self):
-        self.client = Client(
-            "xsfilesxbot",  # Yahaan par name parameter zaroor dena hoga
-            api_id="your_api_id",
-            api_hash="your_api_hash",
-            bot_token="your_bot_token"
-        )
-
-    def run(self):
-        self.client.run()
-     
+# Bot class ko run karein
+Bot().run()

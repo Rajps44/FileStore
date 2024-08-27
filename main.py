@@ -1,6 +1,15 @@
-from bot import Bot
-import pyrogram.utils
 
-pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
+from pyrogram import Client
 
-Bot().run()
+class Bot:
+    def __init__(self):
+        self.client = Client(
+            "xsfilesxbot",  # Yahaan par name parameter zaroor dena hoga
+            api_id="your_api_id",
+            api_hash="your_api_hash",
+            bot_token="your_bot_token"
+        )
+
+    def run(self):
+        self.client.run()
+     

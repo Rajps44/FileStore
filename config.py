@@ -32,8 +32,8 @@ FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002172623381"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
-START_PIC = os.environ.get("START_PIC", "https://i.postimg.cc/tgj9XNhg/IMG-20240827-170934-646.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "")
+START_PIC = os.environ.get("START_PIC", "https://i.postimg.cc/htf8HGD7/IMG-20241113-152741-592.jpg")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://i.postimg.cc/MTk81gLn/IMG-20241113-152431-547.jpg")
 
 
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {first}\n\n I can store private files in Specified Channel and other users can access it from special link.</b>")

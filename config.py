@@ -10,25 +10,25 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7318176377:AAEuD9V_QshZXidOESU4jMiCA0rdzbHkjAM")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29364664"))
 #Your API Hash from my.telegram.org
 API_HASH = os.environ.get("API_HASH", "c1f087d9a81e97167013615824a7496c")
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002132781157"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002488304483"))
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "sanjusenxryz")
+OWNER = os.environ.get("OWNER", "CoderRzps")
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6174868004"))
 #Port
 PORT = os.environ.get("PORT", "8030")
 #Database
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://sanjusen321:VQOwwonR4pBeNyal@cluster0.1osdd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002085077648"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002227906864"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002172623381"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -40,7 +40,7 @@ START_MSG = os.environ.get("START_MESSAGE", "<b>Hello!! {first}\n\n I can store 
 
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "74511").split()):
+    for x in (os.environ.get("ADMINS", "6508598835").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -61,7 +61,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "Hii sir  ! YOU ARE NOT MY OWNER!!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7451167149)
+ADMINS.append(6174868004)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
